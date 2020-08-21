@@ -8,7 +8,7 @@ Este documento foi criado para auxiliar iniciantes em banco de dados que utiliza
 
 Para realizar a exportação do banco para a sua máquina local, você deverá acessar na barra de navegação a aba 'Administration' e clicar na opção 'Data Export'.
 
-![Export](../instructions-export-import/img/Export.png)
+![Export](Export.png)
 
 
 
