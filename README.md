@@ -9,7 +9,7 @@ Este documento foi criado para auxiliar iniciantes em banco de dados que utiliza
 Para realizar a exportação do banco para a sua máquina local, você deverá acessar na barra de navegação a aba 'Administration' e clicar na opção 'Data Export'.
 
 
-![Export](Export.png)
+![Export](/img/Export.png)
 
 
 Ao clicar nesta opção, será aberta uma nova aba 'Administration - Data Export', nela você irá selecionar o banco desejado, e as tabelas que serão exportadas.
@@ -19,7 +19,7 @@ Se o interesse da exportação seja apenas algumas tabelas, o ideal é que seja 
 
 ### A opção ‘Dump Structure and Data’ é importante para salvar a estrutura da tabela e as linhas de dados nela
 
-![Export2](Export2.png)
+![Export2](/img/Export2.png)
 
 
 Com tudo pronto, podemos iniciar a Exportação em 'Start Export'.
@@ -43,7 +43,7 @@ Após definido o caminho deste arquivo, você deverá criar um novo Schema, clic
 Feito isto, pode iniciar a importação clicando no botão 'Start Import'.
 
 
-![Import](Import.png)
+![Import](/img/Import.png)
 
 
 Se no fim da sua importação o Workbench retornar o seguinte erro:
@@ -64,7 +64,7 @@ max_allowed_packet=5120M // Definindo o tamanho máximo de 5Gb
 
 # Mais do mesmo: Erros!
 
-![Erro](Erro.png)
+![Erro](/img/Erro.png)
 
 Ao iniciar a importação e o Workbench apresentar a mensagem acima, sabia que, provavelmente nem todas as tabelas do banco serão importadas, devido a versão do Workbench não ser ‘compatível’ com o servidor remoto.
 
@@ -80,7 +80,7 @@ Para que o arquivo de destino não seja substituído, realizamos uma pequena alt
 Se substituir, não necessita fazer mais nenhum passo que irá funcionar. 
 Mas se precisar se ligar a servidores com a versão 8, não seria prático fazer esta substituição, pois, teríamos que substituir sempre que nos ligássemos a servidores diferentes. No meu caso, optei por colocar com um nome diferente.
 
-![mysqldump](mysqldump.png)
+![mysqldump](/img/mysqldump.png)
 
 Após inserido o arquivo dentro do diretório, torna-se necessário definir o caminho do mesmo dentro do Workbench. 
 
@@ -89,3 +89,4 @@ Após inserido o arquivo dentro do diretório, torna-se necessário definir o ca
 Feito isto, o arquivo será importado com êxito!
 
 **A instrução acima, também soluciona a mesma problemática do parâmetro “column-statistics”. Pois, o arquivo mysqldump.exe versão 8 utiliza o parâmetro “column- statistics” ativo por default, que é uma funcionalidade não presente nas versões anteriores do MySQL.**
+
