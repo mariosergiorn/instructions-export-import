@@ -6,6 +6,8 @@ Este documento foi criado para auxiliar iniciantes em banco de dados que utiliza
 
 ## Exportando o banco do servidor remoto para o local
 
+Para realizar a exportação do banco para a sua máquina local, você deverá acessar na barra de navegação a aba 'Administration' e clicar na opção 'Data Export'.
+
 
 
 
