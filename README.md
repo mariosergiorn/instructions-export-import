@@ -36,4 +36,32 @@ Caso esteja utilizando o Xampp v3.2.4, você poderá alterar o arquivo my.ini, l
 
 Para a realização da importação do banco de dados, você deverá acessar na barra de navegação a aba 'Administration' e clicar na opção 'Data Import/Restore'.
 
+Ao acessar a 'Data Import' são exibidas opções de importação, caso você queira importar os dados de apenas um único arquivo (que foi exportado anteriormente), você deverá selecionar a opção 'Import from Self-Contained File' e definir o caminho onde o arquivo .sql foi criado.
+
+Após definido o caminho deste arquivo, você deverá criar um novo Schema, clicando na opção 'New...'. Lembre-se de definir a opção 'Dump Structure and Data' antes de iniciar a importação.
+
+Feito isto, pode iniciar a importação clicando no botão 'Start Import'.
+
+
+![Import](Import.png)
+
+
+Se no fim da sua importação o Workbench retornar o seguinte erro:
+
+“ERROR 2006 (HY000) at line 27652: MySQL server has gone away”
+
+Não fique assustado! Seu banco não foi excluído.
+
+Isso se dar por conta da variável ‘max_allowed_packet’ definido no arquivo my.ini, que por default, encontra-se definido com 1024M (se não me engano). 
+
+Portanto, essa variável deverá ser definida com o tamanho maior que o banco que será importado.
+
+[mysqldump]
+
+max_allowed_packet=5120M // Definindo o tamanho máximo de 5Gb
+
+### Para saber o tamanho do banco, basta acessar o local aonde ele foi exportado.
+
+# Mais do mesmo: Erros!
+
 
