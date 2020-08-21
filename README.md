@@ -24,9 +24,11 @@ Se o interesse da exportação seja apenas algumas tabelas, o ideal é que seja 
 
 Com tudo pronto, podemos iniciar a Exportação em 'Start Export'.
 
-Se no fim da exportação, apresentar o seguinte erro: “Unknown table 'column-statistics' in information_schema (1109)”, você deverá alterar uma configuração dentro do arquivo my.ini
+Se no fim da exportação, apresentar o seguinte erro: “Unknown table 'column-statistics' in information_schema (1109)”, você deverá alterar uma configuração dentro do arquivo my.ini.
+
 O seguinte comando deverá ser inserido dentro deste arquivo.
-Encontre os colchetes [mysqldump] e insira o comando, ‘column-statistics=0’
+Encontre os colchetes [mysqldump] e insira o comando, ‘column-statistics=0’.
+
 Caso esteja utilizando o Xampp v3.2.4, você poderá alterar o arquivo my.ini, localizado no caminho C:\xampp\mysql\bin\my.ini, porém, para que o Workbench possa identificar este arquivo, o caminho do mesmo deverá ser definido em Edit > Preference > Administration > Path to mysqldump tool.
 
 
