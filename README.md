@@ -80,3 +80,12 @@ Para que o arquivo de destino não seja substituído, realizamos uma pequena alt
 Se substituir, não necessita fazer mais nenhum passo que irá funcionar. 
 Mas se precisar se ligar a servidores com a versão 8, não seria prático fazer esta substituição, pois, teríamos que substituir sempre que nos ligássemos a servidores diferentes. No meu caso, optei por colocar com um nome diferente.
 
+![mysqldump](mysqldump.png)
+
+Após inserido o arquivo dentro do diretório, torna-se necessário definir o caminho do mesmo dentro do Workbench. 
+
+**Edit > Preference > Administration > Path to mysqldump Tool**
+
+Feito isto, o arquivo será importado com êxito!
+
+**A instrução acima, também soluciona a mesma problemática do parâmetro “column-statistics”. Pois, o arquivo mysqldump.exe versão 8 utiliza o parâmetro “column- statistics” ativo por default, que é uma funcionalidade não presente nas versões anteriores do MySQL.**
