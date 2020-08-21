@@ -64,4 +64,19 @@ max_allowed_packet=5120M // Definindo o tamanho máximo de 5Gb
 
 # Mais do mesmo: Erros!
 
+![Erro](Erro.png)
+
+Ao iniciar a importação e o Workbench apresentar a mensagem acima, sabia que, provavelmente nem todas as tabelas do banco serão importadas, devido a versão do Workbench não ser ‘compatível’ com o servidor remoto.
+
+O método utilizado para resolução desta problemática, é feito da seguinte forma:
+
+1. Download da versão anterior do mysqldump. (https://dev.mysql.com/downloads/mysql/5.7.html#downloads)
+2. Extração dos arquivos contidos na pasta ZIP.
+3. Localizar arquivo mysqldump.exe nos arquivos extraídos. (Possivelmente será encontrado dentro da pasta bin).
+4. Copiar o mesmo para dentro da pasta do Workbench. (C:\Program Files\MySQL\MySQL Workbench 8.0 CE).
+
+Para que o arquivo de destino não seja substituído, realizamos uma pequena alteração no nome do arquivo, conforme imagens abaixo.
+
+Se substituir, não necessita fazer mais nenhum passo que irá funcionar. 
+Mas se precisar se ligar a servidores com a versão 8, não seria prático fazer esta substituição, pois, teríamos que substituir sempre que nos ligássemos a servidores diferentes. No meu caso, optei por colocar com um nome diferente.
 
